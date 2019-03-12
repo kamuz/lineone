@@ -124,6 +124,10 @@ input{
 header {
     padding: 20px 0 30px;
     box-shadow: 0 5px 48px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
 }
 
 header nav {
@@ -160,6 +164,7 @@ header .buttons {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
+    padding-top: 100px;
 }
 
 .hero h1 {
@@ -182,10 +187,18 @@ header .buttons {
   LOGOS
 --------------------------------------------------*/
 
+.calculator .logos{
+    margin: -100px 0 50px;
+}
+
 .logos .list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logos h3{
+    font-size: 18px;
 }
 
 /*--------------------------------------------------
@@ -197,6 +210,11 @@ header .buttons {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px 0;
+}
+
+.calculator .what-is {
+    background-position: center -100px;
+    padding: 200px 0 300px;
 }
 
 .what-is .col-md-6:nth-child(2){
