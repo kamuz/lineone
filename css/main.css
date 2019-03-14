@@ -33,7 +33,7 @@ a {
 
 button {
     border: none;
-    font-size: ;
+    outline: none;
 }
 
 h3 {
@@ -172,11 +172,6 @@ header .buttons {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
-}
-
-.about .hero,
-.blog .hero {
-    background-image: url(../img/about-hero-bg.svg);
 }
 
 .hero h1 {
@@ -331,7 +326,7 @@ header .buttons {
   TESTIMONIALS
 --------------------------------------------------*/
 
-.testimonials {
+.home .testimonials {
     padding: 250px 0 250px;
     background-image: url(../img/bg-3.svg);
     background-repeat: no-repeat;
@@ -340,7 +335,7 @@ header .buttons {
     margin-top: -150px;
 }
 
-.testimonials .owl-carousel {
+.home .testimonials .owl-carousel {
     background-image: url(../img/testimonials-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -350,27 +345,27 @@ header .buttons {
     color: #fff;
 }
 
-.testimonials .owl-carousel img {
+.home .testimonials .owl-carousel img {
     border-radius: 100%;
     width: auto;
     border: 5px solid var(--yellow);
 }
 
-.testimonials .owl-carousel h4 {
+.home .testimonials .owl-carousel h4 {
     font-size: 24px;
 }
 
-.testimonials .owl-carousel p {
+.home .testimonials .owl-carousel p {
     font-size: 18px;
     width: 80%;
     margin: 0 auto;
 }
 
-.testimonials .slide-navigation {
+.home .testimonials .slide-navigation {
     margin-top: 100px;
 }
 
-.testimonials .slide-navigation button {
+.home .testimonials .slide-navigation button {
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -383,7 +378,7 @@ header .buttons {
     cursor: pointer;
 }
 
-.testimonials .slider-container {
+.home .testimonials .slider-container {
     background-image: url(../img/testimonials-slider-bg.png);
     background-repeat: no-repeat;
     background-position: 400px bottom;
@@ -452,6 +447,11 @@ footer form button[type="submit"] {
 /*--------------------------------------------------
   ABOUT
 --------------------------------------------------*/
+
+.about .hero,
+.blog .hero {
+    background-image: url(../img/about-hero-bg.svg);
+}
 
 .cta {
     padding: 40px 0;
@@ -627,4 +627,117 @@ footer form button[type="submit"] {
     position: absolute;
     right: 20px;
     top: 20px;
+}
+
+/*--------------------------------------------------
+  TESTIMONIAL
+--------------------------------------------------*/
+
+.testimonials .hero{
+    background-image: url(../img/testimonials-hero-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.testimonials .top-bg{
+    background-image: url(../img/testimonials-top-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.testimonials .color-bg{
+    background-color: #d9e8ff;
+    padding-bottom: 200px;
+    margin-bottom: -300px;
+}
+
+.testimonials .slider .center{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.testimonials .slider h2{
+    margin-top: 0;
+}
+
+.testimonials .slider .owl-carousel .owl-item{
+    padding: 15px;
+}
+
+.testimonials .slider .owl-carousel .item img {
+    border-radius: 100%;
+    width: auto;
+    border: 5px solid var(--yellow);
+}
+
+.testimonials .slider .owl-carousel .text-center{
+    border-radius: 5px;
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    padding: 70px 40px 40px;
+}
+
+.testimonials .slider .owl-carousel .flex{
+    position: relative;
+    z-index: 10;
+}
+
+.testimonials .slider .owl-carousel .text-center{
+    position: relative;
+    top: -65px;
+}
+
+.testimonials .slider .owl-carousel h4 {
+    font-size: 18px;
+}
+
+.testimonials .slider .owl-carousel p {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.testimonials .slider .owl-carousel .owl-nav{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.testimonials .slider .owl-carousel .owl-nav button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    border-radius: 100%;
+    line-height: 70px;
+    margin-right: 20px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials .slider .owl-carousel .owl-nav button.owl-prev{
+    left: -55px;
+}
+
+
+.testimonials .slider .owl-carousel .owl-nav button.owl-next{
+    right: -55px;
+}
+
+.testimonials .slider .owl-theme .owl-dots{
+    margin-top: -30px;
+}
+
+.testimonials .slider .owl-theme .owl-dots .owl-dot span{
+    background-color: #24b47e;
+    opacity: 0.5;
+    width: 16px;
+    height: 16px;
+}
+
+.testimonials .slider .owl-theme .owl-dots .owl-dot.active span{
+    opacity: 1;
 }
