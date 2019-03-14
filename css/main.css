@@ -11,14 +11,23 @@
     --light-gray: #99a7b6;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
 }
 
-* {
-    font-family: 'Poppins', sans-serif;
+body {
+    padding-top: 106px;
 }
 
 html,
@@ -34,6 +43,7 @@ a {
 button {
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 h3 {
@@ -120,8 +130,33 @@ input {
     justify-content: center;
 }
 
-body {
-    padding-top: 106px;
+input,
+label {
+    display: block;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+input {
+    font-size: 18px;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+input::placeholder {
+    color: var(--light-gray);
+    font-size: 18px;
+    text-align: center;
 }
 
 /*--------------------------------------------------
@@ -246,37 +281,8 @@ header .buttons {
     text-align: center;
 }
 
-.what-is .discover-form input,
-.what-is .discover-form label {
-    display: block;
-}
-
 .what-is .discover-form label img {
     max-width: 100%;
-}
-
-.what-is .discover-form label {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 25px;
-}
-
-.what-is .discover-form input {
-    font-size: 18px;
-    text-align: center;
-    background-color: transparent;
-    width: 100%;
-    max-width: 100%;
-    padding: 15px 0;
-    border: none;
-    border-bottom: 1px solid var(--light-gray);
-}
-
-.what-is .discover-form input::placeholder {
-    color: var(--light-gray);
-    font-size: 18px;
-    text-align: center;
 }
 
 .what-is .discover-form img {
@@ -375,7 +381,6 @@ header .buttons {
     line-height: 70px;
     margin-right: 20px;
     outline: none;
-    cursor: pointer;
 }
 
 .home .testimonials .slider-container {
@@ -441,7 +446,6 @@ footer form input[type="email"]::placeholder {
 footer form button[type="submit"] {
     position: absolute;
     left: 250px;
-    cursor: pointer;
 }
 
 /*--------------------------------------------------
@@ -586,7 +590,7 @@ footer form button[type="submit"] {
     float: right;
 }
 
-.blog .sidebar ul{
+.blog .sidebar ul {
     list-style-type: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
@@ -595,7 +599,7 @@ footer form button[type="submit"] {
     margin: 0;
 }
 
-.blog .sidebar ul li a{
+.blog .sidebar ul li a {
     display: block;
     font-weight: 700;
     padding: 15px 20px;
@@ -603,21 +607,21 @@ footer form button[type="submit"] {
     transition: all .5s;
 }
 
-.blog .sidebar ul li:last-child a{
+.blog .sidebar ul li:last-child a {
     border: none;
 }
 
 .blog .sidebar ul li a.active,
-.blog .sidebar ul li a:hover{
+.blog .sidebar ul li a:hover {
     background-color: #fff;
     color: var(--green);
 }
 
-.blog .sidebar ul li{
+.blog .sidebar ul li {
     position: relative;
 }
 
-.blog .sidebar ul li a:after{
+.blog .sidebar ul li a:after {
     content: "\f0da";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -633,34 +637,34 @@ footer form button[type="submit"] {
   TESTIMONIAL
 --------------------------------------------------*/
 
-.testimonials .hero{
+.testimonials .hero {
     background-image: url(../img/testimonials-hero-bg.svg);
     background-repeat: no-repeat;
 }
 
-.testimonials .top-bg{
+.testimonials .top-bg {
     background-image: url(../img/testimonials-top-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
 }
 
-.testimonials .color-bg{
+.testimonials .color-bg {
     background-color: #d9e8ff;
     padding-bottom: 200px;
     margin-bottom: -300px;
 }
 
-.testimonials .slider .center{
+.testimonials .slider .center {
     margin: 0 auto;
     width: 80%;
 }
 
-.testimonials .slider h2{
+.testimonials .slider h2 {
     margin-top: 0;
 }
 
-.testimonials .slider .owl-carousel .owl-item{
+.testimonials .slider .owl-carousel .owl-item {
     padding: 15px;
 }
 
@@ -670,19 +674,19 @@ footer form button[type="submit"] {
     border: 5px solid var(--yellow);
 }
 
-.testimonials .slider .owl-carousel .text-center{
+.testimonials .slider .owl-carousel .text-center {
     border-radius: 5px;
     box-shadow: 0 6px 13px rgba(0, 0, 0, 0.16);
     background-color: #fff;
     padding: 70px 40px 40px;
 }
 
-.testimonials .slider .owl-carousel .flex{
+.testimonials .slider .owl-carousel .flex {
     position: relative;
     z-index: 10;
 }
 
-.testimonials .slider .owl-carousel .text-center{
+.testimonials .slider .owl-carousel .text-center {
     position: relative;
     top: -65px;
 }
@@ -696,7 +700,7 @@ footer form button[type="submit"] {
     margin: 0 auto;
 }
 
-.testimonials .slider .owl-carousel .owl-nav{
+.testimonials .slider .owl-carousel .owl-nav {
     position: absolute;
     top: 40%;
     width: 100%;
@@ -712,32 +716,116 @@ footer form button[type="submit"] {
     line-height: 70px;
     margin-right: 20px;
     outline: none;
-    cursor: pointer;
     position: absolute;
     margin: 0;
     padding: 0;
 }
 
-.testimonials .slider .owl-carousel .owl-nav button.owl-prev{
+.testimonials .slider .owl-carousel .owl-nav button.owl-prev {
     left: -55px;
 }
 
 
-.testimonials .slider .owl-carousel .owl-nav button.owl-next{
+.testimonials .slider .owl-carousel .owl-nav button.owl-next {
     right: -55px;
 }
 
-.testimonials .slider .owl-theme .owl-dots{
+.testimonials .slider .owl-theme .owl-dots {
     margin-top: -30px;
 }
 
-.testimonials .slider .owl-theme .owl-dots .owl-dot span{
+.testimonials .slider .owl-theme .owl-dots .owl-dot span {
     background-color: #24b47e;
     opacity: 0.5;
     width: 16px;
     height: 16px;
 }
 
-.testimonials .slider .owl-theme .owl-dots .owl-dot.active span{
+.testimonials .slider .owl-theme .owl-dots .owl-dot.active span {
     opacity: 1;
+}
+
+/*--------------------------------------------------
+  SIGN UP
+--------------------------------------------------*/
+.sign-up {
+    padding: 30px;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-image: url(../img/sign-up-bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.sign-up .bottom-bg{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/sign-up-bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.sign-up form{
+    position: relative;
+    z-index: 1000;
+    margin: 50px auto 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 500px;
+    min-height: 400px;
+    padding: 50px 40px 40px;
+    background-image: url(../img/sign-up-form-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--gray);
+}
+
+.sign-up form .btn{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.sign-up form input{
+    margin-bottom: 40px;
+}
+
+.sign-up form .icon-field{
+    position: relative;
+}
+
+.sign-up form .icon-field .fa{
+    position: absolute;
+    left: 0;
+    top: 17px;
+    color: var(--light-gray);
+}
+
+.sign-up form p{
+    margin-top: 30px;
+    font-size: 14px;
+    color: var(--light-gray);
+}
+
+.sign-up form p a{
+    color: var(--light-gray);
+    text-decoration: underline;
+}
+
+.sign-up .bottom-menu {
+    margin-bottom: 30px;
+}
+
+.sign-up .bottom-menu a{
+    position: relative;
+    z-index: 100;
+    color: #fff;
+    margin: 20px;
+    font-size: 15px;
+    text-decoration: underline;
 }
