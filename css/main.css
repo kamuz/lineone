@@ -159,6 +159,10 @@ input::placeholder {
     text-align: center;
 }
 
+.visible-xs{
+    display: none !important;
+}
+
 /*--------------------------------------------------
   HEADER
 --------------------------------------------------*/
@@ -833,4 +837,70 @@ footer form button[type="submit"] {
     margin: 20px;
     font-size: 15px;
     text-decoration: underline;
+}
+
+/*--------------------------------------------------
+  MOBILE MENU
+--------------------------------------------------*/
+
+#mobile-menu{
+    display: none;
+}
+
+#mobile-menu nav{
+    margin-bottom: 10px;
+}
+
+#mobile-menu nav a {
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#mobile-menu nav a:first-child{
+    border-top: 1px solid #ddd;
+}
+
+#mobile-menu .buttons{
+    display: flex;
+    justify-content: center;
+}
+
+a.toggle-menu-button {
+    margin-top: 20px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background: black;
+    color: #fff;
+    float: right;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------
+  MEDIA
+--------------------------------------------------*/
+
+@media(max-width: 1200px){
+    header nav a{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 992px){
+    
+}
+
+@media(max-width: 768px){
+    .hidden-xs{
+        display: none !important;
+    }
+
+    .visible-xs{
+        display: block !important;
+    }
 }

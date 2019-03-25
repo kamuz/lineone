@@ -45,4 +45,13 @@ $('.testimonials .slider .owl-carousel').owlCarousel({
     loop: true,
     animateOut: 'fadeOut',
     navText: ['<i class="arrow-left"><img src="img/arrow-prev.svg" alt="left" /></i>','<i class="arrow-right"><img src="img/arrow-next.svg" alt="right" /></i>'],
-})
+});
+
+function toggleMobileMenu() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
