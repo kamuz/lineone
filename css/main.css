@@ -163,6 +163,10 @@ input::placeholder {
     display: none !important;
 }
 
+.bottom-40{
+    margin-bottom: 40px;
+}
+
 /*--------------------------------------------------
   HEADER
 --------------------------------------------------*/
@@ -862,7 +866,7 @@ footer form button[type="submit"] {
 }
 
 #mobile-menu nav a:first-child{
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ddd;o
 }
 
 #mobile-menu .buttons{
