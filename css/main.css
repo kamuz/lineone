@@ -961,6 +961,10 @@ a.toggle-menu-button {
         z-index: 10;
     }
 
+    .testimonials .carousel-wrap{
+        padding: 0 50px;
+    }
+
 }
 
 @media(max-width: 768px){
@@ -984,7 +988,11 @@ a.toggle-menu-button {
     .calculator .logos{
         margin-bottom: 200px;
     }
-}
+
+    .home .features,
+    .about .features{
+        margin-bottom: 100px;
+    }
 
 @media(max-width: 500px){
 
@@ -1006,6 +1014,24 @@ a.toggle-menu-button {
 
     .sign-up form input{
         font-size: 16px;
+    }
+
+    .testimonials .carousel-wrap{
+        padding: 0 10px;
+    }
+
+    .testimonials .slider .owl-carousel .owl-nav button{
+        width: 32px;
+        height: 32px;
+        line-height: 38px;
+    }
+
+    .testimonials .slider .owl-carousel .owl-nav button.owl-prev{
+        left: -22px;
+    }
+
+    .testimonials .slider .owl-carousel .owl-nav button.owl-next{
+        right: -22px;
     }
 
     .hero h1{

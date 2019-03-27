@@ -15,10 +15,10 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                <div class="col-md-3 col-sm-12 col-xs-6">
+                    <a href="/"><img src="img/logo.png" alt="logo"></a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 col-sm-7 hidden-xs">
                     <nav>
                         <a href="calculator.html">Calculator</a>
                         <a href="about.html">About Us</a>
@@ -26,9 +26,28 @@
                         <a href="blog.html">Blog</a>
                     </nav>
                 </div>
-                <div class="col-md-4 buttons">
+                <div class="col-md-4 col-sm-5 hidden-xs buttons">
                     <a href="#" class="btn m green">Get Started</a>
                     <a href="#" class="btn m white">Login</a>
+                </div>
+                <div class="col-xs-6 visible-xs">
+                    <a href="javascript:void(0);" class="toggle-menu-button" onclick="toggleMobileMenu()"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="mobile-menu">
+                        <nav>
+                            <a href="calculator.html">Calculator</a>
+                            <a href="about.html">About Us</a>
+                            <a href="testimonials.html">Testimonials</a>
+                            <a href="blog.html">Blog</a>
+                        </nav>
+                        <div class="buttons">
+                            <a href="#" class="btn m green">Get Started</a>
+                            <a href="#" class="btn m white">Login</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,47 +80,49 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="flex h center"><img src="img/user-2.png" alt="user"></div>
-                                <div class="text-center">
-                                    <h4>Jennifer Dooley</h4>
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <div class="carousel-wrap">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="flex h center"><img src="img/user-2.png" alt="user"></div>
+                                    <div class="text-center">
+                                        <h4>Jennifer Dooley</h4>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="flex h center"><img src="img/user-5.png" alt="user"></div>
-                                <div class="text-center">
-                                    <h4>John Dou</h4>
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                <div class="item">
+                                    <div class="flex h center"><img src="img/user-5.png" alt="user"></div>
+                                    <div class="text-center">
+                                        <h4>John Dou</h4>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="flex h center"><img src="img/user-2.png" alt="user"></div>
-                                <div class="text-center">
-                                    <h4>Jennifer Dooley</h4>
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                <div class="item">
+                                    <div class="flex h center"><img src="img/user-2.png" alt="user"></div>
+                                    <div class="text-center">
+                                        <h4>Jennifer Dooley</h4>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="flex h center"><img src="img/user-5.png" alt="user"></div>
-                                <div class="text-center">
-                                    <h4>John Dou</h4>
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                <div class="item">
+                                    <div class="flex h center"><img src="img/user-5.png" alt="user"></div>
+                                    <div class="text-center">
+                                        <h4>John Dou</h4>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="flex h center"><img src="img/user-2.png" alt="user"></div>
-                                <div class="text-center">
-                                    <h4>Jennifer Dooley</h4>
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                <div class="item">
+                                    <div class="flex h center"><img src="img/user-2.png" alt="user"></div>
+                                    <div class="text-center">
+                                        <h4>Jennifer Dooley</h4>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="flex h center"><img src="img/user-5.png" alt="user"></div>
-                                <div class="text-center">
-                                    <h4>John Dou</h4>
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                <div class="item">
+                                    <div class="flex h center"><img src="img/user-5.png" alt="user"></div>
+                                    <div class="text-center">
+                                        <h4>John Dou</h4>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -113,10 +134,10 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-sm-5">
                     <h3>Get started today</h3>
                 </div>
-                <div class="col-md-7">
+                <div class="col-sm-7">
                     <form action="#">
                         <input type="email" name="email" placeholder="email@email.com">
                         <button type="submit" class="btn l yellow">Get started</button>
@@ -124,10 +145,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <img src="img/logo-white.png" alt="logo">
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     <h4>About</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -135,7 +156,7 @@
                         <li><a href="#">Features</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#">Privacy policy</a></li>
