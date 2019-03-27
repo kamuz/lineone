@@ -977,6 +977,9 @@ a.toggle-menu-button {
         margin-top: -300px;
     }
 
+    .calculator .logos{
+        margin-bottom: 200px;
+    }
 }
 
 @media(max-width: 500px){
